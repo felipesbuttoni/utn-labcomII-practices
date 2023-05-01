@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de datos personales</title>
 </head>
+
 <body>
-    
+    <h1>Formulario de datos personales</h1>
+    <form>
+        <fieldset>
+            <legend>Estudiante</legend>
+            <br>
+
+            <label for="nombre-completo">Nombre completo:</label>
+            <input type="text" name="nombre-completo" id="nombre-completo" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="18" required>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad" required>
+                <option value="argentina">Argentina</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="colombia">Colombia</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="otra">Otra</option>
+            </select>
+
+            <label for="condicion-laboral">Condición laboral:</label>
+            <select name="condicion-laboral" id="condicion-laboral" required>
+                <option value="desempleado">Desempleado</option>
+                <option value="en-busqueda">En búsqueda laboral</option>
+                <option value="part-time">Part-time</option>
+                <option value="full-time">Full-time</option>
+            </select>
+
+
+            <label for="gustos-personales">Gustos personales:</label>
+
+            <label for="gustos-musicales">Gustos musicales:</label>
+            <input type="text" name="gustos-musicales" id="gustos-musicales" required>
+
+            <label for="comidas-preferidas">Comidas preferidas</label>
+            <select name="comidas-preferidas" id="comidas-preferidas" required>
+                <option value="pizza">Pizza</option>
+                <option value="asado">Asado</option>
+                <option value="hamburguesa">Hamburguesa</option>
+                <option value="pastas">Pastas</option>
+                <option value="empanadas">Empanadas</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+            <label for="check">Recordar los datos del usuario</label>
+            <input type="checkbox" name="check"
+             id="check">
+        </fieldset>
+        
+    </form>
 </body>
+
 </html>
